@@ -1,14 +1,62 @@
-# Site settings
-title: Your awesome title
-email: your-email@domain.com
-description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://yourdomain.com" # the base hostname & protocol for your site
-twitter_username: jekyllrb
-github_username:  jekyll
+# Site wide configuration
 
-# Build settings
-markdown: kramdown
+title:            QUA.ST
+locale:           en_US
+url:              http://qua.st
+encoding:         UTF-8
+
+
+# Jekyll configuration
+
+permalink:   /:categories/:title/
+markdown:    kramdown
+highlighter: pygments
+sass:
+  sass_dir: _sass
+  style: compressed
+gems:
+  - jekyll-sitemap
+
+kramdown:
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  use_coderay: false
+
+
+# Site owner
+owner:
+  name: Bastiaan Quast
+  avatar: http://gravatar.com/avatar/9f979d814c18db7e759b64ca8a52953d?s=400
+  bio: "PhD Candidate Development Economics"
+  email: bquast@gmail.com
+  disqus-shortname: bquast
+  twitter: baquast
+  facebook: baquast
+  google:
+    plus: BastiaanQuast
+    analytics: UA-52945502-2 
+    verify: googleed4e93c16482d1af
+    ad-client: 
+    ad-slot: 
+  bing-verify: 
+  github: bquast
+  stackoverflow: 1328355/bquast
+  orcid: 0000-0002-2951-3577
+  linkedin: baquast
+  xing: #username
+  instagram: #username
+  lastfm: #username
+  tumblr: #username
+  pinterest: #username
+  foursquare: #username
+  steam: baquast
+  dribbble: #username
+  youtube: BastiaanQuast
+  soundcloud: #username
+  weibo: #username
+  flickr: #username
+
+include: [".htaccess"]
+exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules", "Gemfile", "Gemfile.lock", "LICENSE", "README.md"]

@@ -1,0 +1,23 @@
+# Site navigation links
+
+- title: About Me
+  url: /about/
+
+- title: Blog
+  url: /posts/
+
+- title: Research
+  url: /research/
+
+- title: Software
+  url: /software/
+  
+- title: Publications
+  url: /publications/
+  
+- title: Teaching
+  url: /teaching/
+   
+- title: Employment
+  url: /employment/
+  
