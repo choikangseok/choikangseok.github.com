@@ -1,62 +1,36 @@
 # Site wide configuration
 
-title:            QUA.ST
-locale:           en_US
-url:              http://qua.st
-encoding:         UTF-8
-
+title: OrangeStock
+description: How to invest in Stocks
+logo: # 120x120 px default image used for Twitter summary card
+teaser: # 400x250 px default teaser image used in image archive grid
+locale:
+url:
 
 # Jekyll configuration
 
-permalink:   /:categories/:title/
-markdown:    kramdown
-highlighter: pygments
 sass:
-  sass_dir: _sass
-  style: compressed
+    sass_dir: _sass
+    style: compressed
+permalink: /:categories/:title/
+kramdown:
+  toc_levels: 1..2
+highlighter: pygments
 gems:
   - jekyll-sitemap
-
-kramdown:
-  auto_ids: true
-  footnote_nr: 1
-  entity_output: as_char
-  toc_levels: 1..6
-  use_coderay: false
 
 
 # Site owner
 owner:
-  name: Bastiaan Quast
-  avatar: http://gravatar.com/avatar/9f979d814c18db7e759b64ca8a52953d?s=400
-  bio: "PhD Candidate Development Economics"
-  email: bquast@gmail.com
-  disqus-shortname: bquast
-  twitter: baquast
-  facebook: baquast
+  name:
+  email:
+  twitter:
   google:
-    plus: BastiaanQuast
-    analytics: UA-52945502-2 
-    verify: googleed4e93c16482d1af
     ad-client: 
     ad-slot: 
-  bing-verify: 
-  github: bquast
-  stackoverflow: 1328355/bquast
-  orcid: 0000-0002-2951-3577
-  linkedin: baquast
-  xing: #username
-  instagram: #username
-  lastfm: #username
-  tumblr: #username
-  pinterest: #username
-  foursquare: #username
-  steam: baquast
-  dribbble: #username
-  youtube: BastiaanQuast
-  soundcloud: #username
-  weibo: #username
-  flickr: #username
+  bio: 
+  avatar: bio-photo.jpg # 160x160 px image for author byline
+disqus-shortname:
 
-include: [".htaccess"]
-exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules", "Gemfile", "Gemfile.lock", "LICENSE", "README.md"]
+
+exclude: ["lib", "config.rb", ".sass-cache", "Capfile", "config", "log", "Rakefile", "Rakefile.rb", "tmp", "*.sublime-project", "*.sublime-workspace", "Gemfile", "Gemfile.lock", "README.md", "LICENSE", "node_modules", "Gruntfile.js", "package.json"]
